@@ -149,6 +149,24 @@
       .active path:nth-child(6) {
         transform: translateX(9px) translateY(1px) rotate(45deg);
       }
+      .diamond {
+            position: relative;
+            
+            /* background-color: #FD5D14; Adjust background color */
+            background-color: white;
+            border:2px solid #FD5D14;
+            transform: rotate(45deg); /* Rotate to create diamond shape */
+            /* border-radius: 100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .diamond img {
+            /* width: 40px; Adjust logo size */
+            height: auto;
+            transform: rotate(-45deg); /* Rotate logo back to upright */
+          }
     </style>
 </head>
 
@@ -158,8 +176,11 @@
       <header>
         <div class="w-full h-[100px] fixed z-[20] flex items-center justify-between px-4 md:px-8 bg-[#02245B]">
           <!-- Logo Section -->
-          <div class="logo w-[20%] h-full flex items-center justify-center bg-[#FD5D14]">
+          <!-- <div class="logo w-[20%] h-full flex items-center justify-center bg-[#FD5D14]">
             <a href="#" class="text-white text-lg font-bold" aria-label="Logo">LOGO</a>
+          </div> -->
+          <div class=" bg-white w-[90px] h-[50px] sm:w-[160px] sm:h-auto ">
+            <img src="logo2.png" class="w-full h-full" alt="Website Logo">
           </div>
           <!-- Navigation Menu -->
           <div class="hidden md:flex w-[80%] justify-end">
