@@ -71,7 +71,47 @@
 
 //         }
 //     )
-function toggleMenu() {
-  const mobileMenu = document.getElementById("mobile-menu");
-  mobileMenu.classList.toggle("hidden");
+const slides = document.querySelectorAll('.slide');
+const leftBtn = document.querySelector('.left');
+const rightBtn = document.querySelector('.right');
+// const indicators = document.querySelectorAll('.indicators button');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = i === index ? '1' : '0';
+    slide.style.zIndex = i === index ? '1' : '0';
+  });
+
+  indicators.forEach((dot, i) => {
+    dot.style.opacity = i === index ? '1' : '0.5';
+  });
 }
+
+leftBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+rightBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+// indicators.forEach((dot, i) => {
+//   dot.addEventListener('click', () => {
+//     currentIndex = i;
+//     showSlide(currentIndex);
+//   });
+// });
+
+// Show the first slide on load
+showSlide(currentIndex);
+
+// function toggleMenu() {
+//   const mobileMenu = document.getElementById("mobile-menu");
+//   mobileMenu.classList.toggle("hidden");
+// }
+
+

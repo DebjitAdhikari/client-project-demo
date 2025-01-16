@@ -15,167 +15,10 @@
     <title>Responsive Navbar</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      .fade-in {
-        animation: fadeIn 0.5s ease-in-out;
-      }
-
-      .video-container {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-      }
-
-      .video-container video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-        object-fit: cover;
-      }
-
-      .video-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-      }
-
-      .content {
-        position: relative;
-        z-index: 2;
-        color: white;
-        text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      .img {
-        background-image: url("https://sipindustries.com/wp-content/uploads/2020/08/Over-a-million-square-feet-of-inventory-to-serve-you-across-the-USA.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 100%;
-      }
-      .right {
-        background-image: url("\https://www.kiswok.com/assets/upload/Banner-Image/0d81b96329d04eb36665038ed6248d1f.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        width: 50%;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      .container {
-        cursor: pointer;
-        display: flex;
-      }
-
-      svg {
-        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .active svg {
-        transform: rotate(90deg);
-      }
-
-      path {
-        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-          stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
-          stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      path:nth-child(1) {
-        transform-origin: 36% 40%;
-      }
-
-      path:nth-child(2) {
-        stroke-dasharray: 29 299;
-      }
-
-      path:nth-child(3) {
-        transform-origin: 35% 63%;
-      }
-
-      path:nth-child(4) {
-        stroke-dasharray: 29 299;
-      }
-
-      path:nth-child(5) {
-        transform-origin: 61% 52%;
-      }
-
-      path:nth-child(6) {
-        transform-origin: 62% 52%;
-      }
-
-      .active path:nth-child(1) {
-        transform: translateX(9px) translateY(1px) rotate(45deg);
-      }
-
-      .active path:nth-child(2) {
-        stroke-dasharray: 225 299;
-        stroke-dashoffset: -72px;
-      }
-
-      .active path:nth-child(3) {
-        transform: translateX(9px) translateY(1px) rotate(-45deg);
-      }
-
-      .active path:nth-child(4) {
-        stroke-dasharray: 225 299;
-        stroke-dashoffset: -72px;
-      }
-
-      .active path:nth-child(5) {
-        transform: translateX(9px) translateY(1px) rotate(-45deg);
-      }
-
-      .active path:nth-child(6) {
-        transform: translateX(9px) translateY(1px) rotate(45deg);
-      }
-      .diamond {
-            position: relative;
-            
-            /* background-color: #FD5D14; Adjust background color */
-            background-color: white;
-            border:2px solid #FD5D14;
-            transform: rotate(45deg); /* Rotate to create diamond shape */
-            /* border-radius: 100%; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-      
-          .diamond img {
-            width: 40px; /* Adjust logo size */
-            height: auto;
-            transform: rotate(-45deg); /* Rotate logo back to upright */
-          }
-    </style>
+    <link rel="stylesheet" href="style.css">
     
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden  ">
     <container>
       <nav>
         <header>
@@ -192,6 +35,7 @@
               <ul class="text-white flex gap-6 items-center text-sm font-medium">
                 <li><a href="index.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Home</a></li>
                 <li><a href="about.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">About Us</a></li>
+                <li><a href="products.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Products</a></li>
                 <li><a href="infrastructure.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Infrastructure</a></li>
                 <li><a href="quality.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Quality</a></li>
                 <li><a href="contact.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Contact Us</a></li>
@@ -218,6 +62,7 @@
             <ul class="text-white flex flex-col items-center p-4 gap-4 text-xl sm:text-3xl font-medium">
               <li><a href="index.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Home</a></li>
               <li><a href="about.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">About Us</a></li>
+              <li><a href="products.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Products</a></li>
               <li><a href="infrastructure.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Infrastructure</a></li>
               <li><a href="quality.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Quality</a></li>
               <li><a href="contact.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Contact Us</a></li>
@@ -238,155 +83,49 @@
           <p class="text-sm sm:text-lg md:text-xl mt-4">Experience excellence and innovation</p>
         </div>
       </div>
-      <!--product  section-->
-      <div
-        class="w-screen min-h-[50vh] cursor-pointer bg-[#02245B] flex justify-center items-center bg-gray-300 py-10"
-      >
-        <div class="w-[99%] max-w-6xl p-6 bg-[#02245B] rounded-lg shadow-lg">
-          <h3
-            class="text-2xl md:text-3xl font-bold text-white mb-6 text-center border-b-2 border-[#FD5D14] pb-2"
-          >
-            Products
-          </h3>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-          >
-            <!-- Product Card -->
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 1
-              </div>
-            </div>
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 1
-              </div>
-            </div>
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 2
-              </div>
-            </div>
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 3
-              </div>
-            </div>
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 4
-              </div>
-            </div>
+      <!-- short about -->
+       <div class="min-h-[50vh] w-[100vw] py-6 px-2 flex items-center justify-center bg-gray-100">
 
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 5
-              </div>
+          <div class="max-w-7xl  mx-auto flex flex-col lg:flex-row justify-around items-center mt-10 px-2 md:px-8  md:gap-8">
+            <!-- Text Section -->
+            <div class="max-w-[700px]  md:text-left">
+                <h1 class=" text-xl md:text-3xl font-bold border-l-4 border-blue-800 pl-2 text-[#FD5D14] mb-4 md:mb-10">A LEGACY OF CASTING PROGRESS</h1>
+                <ul class="space-y-2 text-left text-gray-700 text-sm md:text-md font-medium  leading-loose">
+                    <li >&#9635; 
+                        KEITH CERAMIC (KTC): LEADING & WELL-ESTABLISHED MANUFACTURER & 
+                    EXPORTER OF GREY IRON CASTINGS SINCE 1992 <br>
+                    KEITH CERAMIC (KTC) IS A FAMILY-OWNED BUSINESS WITH OVER THREE DECADES 
+                    OF EXPERIENCE IN MANUFACTURING GREY IRON CASTINGS. FOUNDED IN 1992, WE 
+                    HAVE BECOME A DISTINGUISHED MANUFACTURER AND EXPORTER OF HIGH
+                    QUALITY GREY IRON CASTINGS WITH AN ANNUAL INSTALLED PRODUCTION 
+                    CAPACITY OF 30,000 MT. <br>
+                    </li>
+                    <li>&#9635; STRATEGIC LOCATION FOR EFFICIENT OPERATIONS <br>
+                        KTC IS STRATEGICALLY LOCATED WITH EASY ACCESS TO 2 NEARBY PORTS AND A 
+                        RAILWAY STATION, MAKING IT EASIER TO TRANSPORT MULTI-AXLE GOODS 
+                        EFFICIENTLY. OUR FACILITY IS CONVENIENTLY SITUATED ALONG A NATIONAL 
+                        HIGHWAY, ENSURING SMOOTH LOGISTICS AND TIMELY DELIVERY. </li>
+                    <li> 
+                      <button class="flex bg-[#FD5D14] p-1 sm:p-2 rounded-md text-white  ">
+                        <a class="flex gap-2 items-center" href="about.html">
+                          <span>See more </span>
+  
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>                      
+                        </a>
+                    </button>
+                  </li>
+                </ul>
+                </div>
+            <!-- Image Section -->
+            <div class="mt-6 max-w-[500px]">
+                <img class="rounded-lg  w-full" src="team-management-gif.gif" alt="Who we are">
             </div>
-            <!--Product 5-->
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 6
-              </div>
-            </div>
-
-            <!--Product 6-->
-            <div class="group">
-              <div
-                class="relative w-full h-48 rounded-lg overflow-hidden shadow-md"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/940251778/photo/construction-site-view-with-tower-crane.jpg?s=612x612&w=0&k=20&c=h78zklXIGAKjIQi3AI7hkp4FNEOFhXXL1Mz9KNogdiI="
-                  alt="Product 1"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div
-                class="mt-4 bg-[#FD5D14] text-[#02245B] text-center py-2 rounded-lg font-semibold group-hover:bg-[#02245B] group-hover:text-[#FD5D14] transition-all duration-300"
-              >
-                Product 7
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+       </div>
+
 
       <!--Years Section -->
       <div class="w-screen min-h-[100vh]">
@@ -401,173 +140,225 @@
               U.S.
             </h1>
             <img
-              src="https://sipindustries.com/wp-content/uploads/2021/05/SIP-Logo-60-Years.svg"
+              src="logo2.png"
               alt="Logo"
               class="h-[50px] md:h-[80px] lg:h-[100px] object-contain"
             />
           </div>
         </div>
       </div>
-
-      <div
-        class="w-screen min-h-[50vh] flex flex-col items-center justify-center bg-[#02245B] p-6"
-      >
-        <div class="textpart w-full md:w-[50%] text-center md:text-left mb-8">
-          <h2 class="text-3xl font-semibold text-white">
-            Our Pride and Inspiration
-          </h2>
-          <p class="text-white mt-4">
-            Guided by the vision of our pioneering leaders, Kiswok has
-            continually pushed boundaries and reached new heights. Their
-            dedication to excellence and innovation laid the foundation for our
-            enduring success and the core values that drive our growth today.
-          </p>
-        </div>
-
-        <!-- Responsive Flex Layout -->
-        <div
-          class="w-full flex flex-col md:flex-row items-center justify-center gap-6"
-        >
-          <!-- Left Image -->
-          <div
-            class="firstphoto w-full md:w-[30%] flex justify-center mb-6 md:mb-0"
-          >
-            <img
-              src="https://www.tata.com/content/dam/tata/images/Management/Desktop/n-chandrasekaran_hover_desktop_378x448.jpg"
-              class="rounded-full shadow-xl w-[80%] md:w-[90%] border-4 border-[#FD5D14]"
-            />
-          </div>
-
-          <!-- Middle Text Section -->
-          <div
-            class="middletext w-full md:w-[30%] text-center md:text-left text-white"
-          >
-            <strong class="text-2xl">Late Ratan Tata</strong>
-            <p class="mt-2 text-lg text-[#FD5D14]">Founder</p>
-            <p class="mt-4">
-              You taught us the meaning of perfection and perseverance. You
-              taught us the virtues which guide us through the darkness, help us
-              strive for the best, and make us better human beings, every single
-              day.
-            </p>
-            <br /><br />
-            <p>
-              We promise to embody your values and live up to your legacy for
-              the rest of our days. You will, forever, rest in the core of our
-              hearts.
-            </p>
-          </div>
-
-          <!-- Right Side with Two Images -->
-          <div class="flex w-full md:w-[30%] gap-5 h-full justify-center">
-            <div class="w-[45%] h-full">
-              <img
-                src="https://www.tata.com/content/dam/tata/images/Management/Desktop/n-chandrasekaran_hover_desktop_378x448.jpg"
-                class="w-full h-full rounded-lg shadow-lg border-4 border-[#FD5D14]"
-              />
-              <strong class="text-white text-center block mt-2"
-                >Mr. Natarajan</strong
-              >
-              <p class="text-center text-[#FD5D14]">Chairman</p>
-            </div>
-            <div class="w-[45%] h-full">
-              <img
-                src="https://www.tata.com/content/dam/tata/images/Management/Desktop/n-chandrasekaran_hover_desktop_378x448.jpg"
-                class="w-full h-full rounded-lg shadow-lg border-4 border-[#FD5D14]"
-              />
-              <strong class="text-white text-center block mt-2"
-                >Mr. Natarajan</strong
-              >
-              <p class="text-center text-[#FD5D14]">Chairman</p>
-              <button
-                class="mt-4 md:px-6 md:py-2 bg-[#FD5D14] text-[#02245B] md:font-semibold md:text-lg rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#FD5D14]"
-              >
-                View Leadership
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <!--product  section-->
+      
+    
       <!--Our Pride our Inspiration -->
-
-      <footer class="bg-[#02245B] text-white py-10 border-t-2 border-[#FD5D14]">
-        <div class="w-full max-w-[1200px] mx-auto px-6 flex flex-col lg:flex-row gap-12">
-          <!-- Logo and Description -->
-          <div class="lg:w-[30%] w-full">
-            <div class="text-[#FD5D14] font-extrabold text-3xl mb-4">Kiswok</div>
-            <p class="text-sm leading-relaxed mb-6">
-              Established in 1957, Kiswok stands as a leading brand in the foundry industry worldwide, known for its commitment to exceptional quality and customer service.
-            </p>
-            <div>
-              <p class="text-[#FD5D14] font-semibold mb-4 uppercase">Follow Us On</p>
-              <div class="flex space-x-4">
-                <a href="https://facebook.com" class="hover:text-[#FD5D14] flex items-center space-x-2 transition-transform duration-300 hover:scale-110">
-                  <i class="fab fa-facebook-f"></i>
-                  <span>Facebook</span>
-                </a>
-                <a href="https://linkedin.com" class="hover:text-[#FD5D14] flex items-center space-x-2 transition-transform duration-300 hover:scale-110">
-                  <i class="fab fa-linkedin-in"></i>
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com" class="hover:text-[#FD5D14] flex items-center space-x-2 transition-transform duration-300 hover:scale-110">
-                  <i class="fab fa-twitter"></i>
-                  <span>Twitter</span>
-                </a>
+      <div class="min-h-[50vh] w-[100vw] py-6 px-2  bg-gray-100">
+        <div class="max-w-7xl  mx-auto flex flex-col  justify-around items-start mt-10 px-2 md:px-8  md:gap-8">
+          <!-- Text Section -->
+           <div class="">
+            <h1 class=" text-xl md:text-3xl font-bold border-l-4 border-blue-800 pl-2 text-[#FD5D14] mb-4 md:mb-10">OUR PRIDE OUR INSPIRATON</h1>
+           </div>
+           <!-- details and image -->
+           <div class="flex gap-4    w-full justify-around items-start flex-col ">
+             <!-- Image Section -->
+            <div class="flex gap-5 self-center sm:self-start flex-col md:flex-row">
+              <!-- image section 1 -->
+               <div class="relative rounded-lg w-full md:w-1/2 h-64 md:h-96 overflow-hidden group">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                  alt="Mission"
+                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                  <div class="text-white flex flex-col justify-end w-full gap-4 h-full text-lg font-bold p-2 sm:p-6">
+                    <h1 class="sm:text-2xl">Mr. Ratan Tata</h1>
+                    <p class="  text-xs sm:text-sm md:text-md font-light leading-relaxed">
+                      Chairman                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- image section 2 -->
+               <div class="relative rounded-lg w-full md:w-1/2 h-64 md:h-96 overflow-hidden group">
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                  alt="Mission"
+                  class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                  <div class="text-white flex flex-col justify-end w-full gap-4 h-full text-lg font-bold p-2 sm:p-6">
+                    <h1 class="sm:text-2xl">Mr. Ratan Tata</h1>
+                    <p class="  text-xs sm:text-sm md:text-md font-light leading-relaxed">
+                      Chairman                    
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
+
+              <!-- details -->
+              <div class=" max-w-[900px] md:text-left">
+                  <div class="space-y-2 text-left text-gray-700 text-sm md:text-md font-medium  leading-loose">
+                      
+                      <p class="text-lg"> Meet John, the Unsung Champion of the Breakroom
+
+                        John, our dedicated facilities manager, is often seen quietly ensuring our workspace runs smoothly. But this month, he went above and beyond, surprising us with his unexpected kindness and resourcefulness.<br>
+                        
+                        A recent plumbing issue threatened to disrupt our workflow. John, noticing the inconvenience, took initiative. He not only swiftly resolved the problem but also took the extra step of installing a new, more efficient water filtration system in the breakroom.
+                        <br>
+                        His thoughtful gesture has not only improved the breakroom experience but also fostered a sense of community and appreciation among his colleagues. John's dedication to making our workplace a better place is a true inspiration. 
+                        </p>
+                      
+                      <button class="flex bg-[#FD5D14] p-1 sm:p-2 rounded-md text-white  ">
+                          <a class="flex gap-2 items-center" href="about.html">
+                            <span>See more </span>
+    
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>                      
+                          </a>
+                      </button>
+                  </div>
+              </div>
+
+           </div>
+      </div>
+
+     </div>
+      <!--Awards -->
+      <div class="min-h-[50vh] w-[100vw] py-6 px-2  bg-gray-100">
+        <div class="max-w-7xl  mx-auto flex flex-col  justify-around items-start mt-10 px-2 md:px-8  md:gap-8">
+          <!-- Text Section -->
+           <div class="">
+            <h1 class=" text-xl md:text-3xl font-bold border-l-4 border-blue-800 pl-2 text-[#FD5D14] mb-4 md:mb-10">Awards</h1>
+           </div>
+           <!-- details and image -->
+           <div class="flex gap-4    w-full justify-around items-start flex-col ">
+             <!-- Image Section -->
+             <div class="slider relative w-full h-[200px] mx-auto sm:h-[300px] lg:w-[800px] lg:h-[400px] overflow-hidden rounded-lg shadow-lg">
+              <!-- Slides Wrapper -->
+              <div class="slides relative w-full h-full">
+                <!-- Slide 1 -->
+                <div class="slide w-full h-full absolute top-0 left-0 transition-all duration-1000 ease-in-out opacity-100" style="z-index: 1;">
+                  <img
+                    src="https://sipindustries.com/wp-content/uploads/2022/12/HMSDC-Certificate.jpg"
+                    alt="Certificate 1"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide w-full h-full absolute top-0 left-0 transition-all duration-1000 ease-in-out opacity-0">
+                  <img
+                    src="https://sipindustries.com/wp-content/uploads/2022/12/Supplier-Clearinghouse-Certificate.png"
+                    alt="Certificate 2"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide w-full h-full absolute top-0 left-0 transition-all duration-1000 ease-in-out opacity-0">
+                  <img
+                    src="https://sipindustries.com/wp-content/uploads/2022/12/SIP-Texas-HUB-Certification.jpg"
+                    alt="Certificate 3"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            
+              <!-- Navigation Buttons -->
+              <button class="left font-bold text-lg md:text-xl absolute top-[50%] left-[10px] z-10 bg-black/50 text-white px-2 py-1 md:px-3 rounded-full hover:bg-black/70 transition">
+                &larr;
+              </button>
+              <button class="right font-bold text-lg md:text-xl absolute top-[50%] right-[10px] z-10 bg-black/50 text-white px-2 py-1 md:px-3 rounded-full hover:bg-black/70 transition">
+                &rarr;
+              </button>
+            
+              <!-- Indicators -->
+              <div class="indicators absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition"></button>
+                <button class="w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition"></button>
+                <button class="w-3 h-3 bg-white rounded-full opacity-50 hover:opacity-100 transition"></button>
+              </div>
+            </div>
+            
+            
+
+              <!-- details -->
+              <div class=" max-w-[900px] lg:mx-auto py-4 md:text-left">
+                  <div class="space-y-2 text-left text-gray-700 text-sm md:text-md font-medium  leading-loose">
+                      
+                      <p class="text-lg mb-6"> Our Awards and Certifications section highlights the milestones and 
+                        accolades that showcase our commitment to excellence and trust. From prestigious 
+                        certifications in quality and compliance to industry-recognized achievements, each 
+                        award represents a testament to our dedication, innovation, 
+                        and expertise. These honors inspire us to continue delivering exceptional value to our partners and clients</p>
+                      
+                      <button class="flex  bg-[#FD5D14] p-1 sm:p-2 rounded-md text-white  ">
+                          <a class="flex gap-2 items-center" href="about.html">
+                            <span>See more </span>
+    
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>                      
+                          </a>
+                      </button>
+                  </div>
+              </div>
+
+           </div>
+      </div>
+
+     </div>
+      
+      <!-- footer -->
+      <footer class="footer bg-[#02245B] border-t-2 text-base-content p-10">
+        <aside>
+          <!-- <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-current">
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+          </svg> -->
+          <div class="w-[90px] bg-white"> 
+            <img src="logo2.png" alt="">
+
           </div>
-      
-          <!-- Links Sections -->
-          <div class="lg:w-[70%] w-full flex flex-wrap gap-8 justify-between">
-            <!-- Community Section -->
-            <div class="w-full sm:w-[45%] lg:w-[30%]">
-              <h5 class="text-lg font-semibold text-[#FD5D14] mb-4 flex items-center space-x-2">
-                <i class="fas fa-users"></i> <span>Community</span>
-              </h5>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Event</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Download</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Blogs</a></li>
-              </ul>
-            </div>
-      
-            <!-- Company Section -->
-            <div class="w-full sm:w-[45%] lg:w-[30%]">
-              <h5 class="text-lg font-semibold text-[#FD5D14] mb-4 flex items-center space-x-2">
-                <i class="fas fa-building"></i> <span>Company</span>
-              </h5>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Infrastructure</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">About Us</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Quality</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Scalability</a></li>
-              </ul>
-            </div>
-      
-            <!-- Products Section -->
-            <div class="w-full sm:w-[45%] lg:w-[30%]">
-              <h5 class="text-lg font-semibold text-[#FD5D14] mb-4 flex items-center space-x-2">
-                <i class="fas fa-box"></i> <span>Products</span>
-              </h5>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Product 1</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Product 2</a></li>
-                <li><a href="#" class="hover:text-[#FD5D14] transition duration-300">Product 3</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Footer Bottom Section -->
-        <div class="mt-10 text-center border-t border-gray-600 pt-4 text-sm">
-          <p>&copy; 2025 Kiswok. All rights reserved.</p>
-        </div>
+          <p>
+            ACME Industries Ltd.
+            <br />
+            Providing reliable tech since 1992
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
       </footer>
       
       
     </container>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="script.js"></script>
+    <script src="toogleMenu.js"></script>
   </body>
 </html>
