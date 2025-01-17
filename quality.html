@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav>
+        <header>
+          <div class="w-full h-[100px] fixed z-[20] flex items-center justify-between px-4 md:px-8 bg-[#02245B]">
+            <!-- Logo Section -->
+            <!-- <div class="logo w-[20%] h-full flex items-center justify-center bg-[#FD5D14]">
+              <a href="#" class="text-white text-lg font-bold" aria-label="Logo">LOGO</a>
+            </div> -->
+            <div class=" bg-white w-[90px] h-[50px] sm:w-[160px] sm:h-auto ">
+              <img src="logo2.png" class="w-full h-full" alt="Website Logo">
+            </div>
+            <!-- Navigation Menu -->
+            <div class="hidden md:flex w-[80%] justify-end">
+              <ul class="text-white flex gap-6 items-center text-sm font-medium">
+                <li><a href="index.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Home</a></li>
+                <li><a href="about.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">About Us</a></li>
+                <li><a href="products.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Products</a></li>
+                <li><a href="infrastructure.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Infrastructure</a></li>
+                <li><a href="quality.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Quality</a></li>
+                <li><a href="contact.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- Animated Hamburger Menu -->
+            <div class="md:hidden flex right-0 items-center">
+              <div class="container" onclick="this.classList.toggle('active'); toggleMenu();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+                  <g stroke-width="6.5" stroke-linecap="round">
+                    <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#fff"/>
+                    <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#fff"/>
+                    <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                    <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden z-[50] top-[100px] w-full min-h-[100vh] bg-[#02245B] fade-in fixed  left-0">
+            <ul class="text-white flex flex-col items-center p-4 gap-4 text-xl sm:text-3xl font-medium">
+              <li><a href="index.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">About Us</a></li>
+              <li><a href="products.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Products</a></li>
+              <li><a href="infrastructure.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Infrastructure</a></li>
+              <li><a href="quality.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Quality</a></li>
+              <li><a href="contact.html" class="hover:text-[#FD5D14] cursor-pointer transition-colors">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+      </nav>
+    <div class="w-full min-h-screen pt-[120px] sm:pt-[150px] flex flex-col items-center py-10">
+        <h1 class="sm:text-3xl text-xl font-bold mb-8 text-center">Quality</h1>
+
+        <!-- Physical Testing Equipment Section -->
+        <div class="w-[90%] md:w-[80%] bg-white shadow-lg rounded-lg p-6 mb-10">
+            <h2 class="font-semibold mb-4 text-center text-md sm:text-2xl text-[#FD5D14]">Physical Testing Equipment</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example Card -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="ElectricVertualmachine.jpg" alt="Electronic Universal Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Electronic Universal Testing Machine (Fully Automatic, FIE – Make, 60 Ton Capacity with Computer Interface)</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="HardwareMachine.jpg" alt="Optical Brinell Hardness Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Optical Brinell Hardness Testing Machine</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Automatic.jpg" alt="Fully Automatic Compressed Load Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Fully Automatic Compressed Load Testing Machine (120 Ton Capacity)</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="DropTestingimage.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Drop Testing Machine</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="InvertedMicroscope.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> INVERTED MICROSCOPE WITH IMAGE ANALYSER </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="DiscMicro.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">  DISC MICRO POLISHING MACHINE  create a imagge of this machine
+
+
+                        </p>
+                    </div>
+                </div>
+
+
+                
+              
+            </div>
+        </div>
+
+        <!-- Wet Chemical Laboratory Equipment Section -->
+        <div class="w-[90%] md:w-[80%] bg-white shadow-lg rounded-lg p-6">
+            <h2 class="font-semibold mb-4 text-center text-md sm:text-2xl text-[#FD5D14]">Wet Chemical Laboratory Equipment</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="STROHLEIN APPARATUS.jpg" alt="Strohlein Apparatus" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Strohlein Apparatus (Complete with Tube Furnace, Water Jacketed Burette, Oxygen Purifying Tube, Absorption Pipette for Carbon Determination)</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Muffle.jpg" alt="Muffle" class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Muffle Furnace (Temperature Range Up to 1400°C)</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="DigitalHot.jpg" alt="Digital Hot Air Oven" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Digital Hot Air Oven (To Remove Moisture)</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Chain.jpg" alt="Chain O Matic Chemical Balance" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">Chain O Matic Chemical Balance</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="singlepan.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">  SINGLE PAN DIGITAL BALANCE
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="HotPlat.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> HOT PLATE ARRANGED IN FUME CHAMBER 
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Distillation.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">  DISTILLATION APPARATUS
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="FortinBarometer.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> FORTIN’S BAROMETER 
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[90%] md:w-[80%] bg-white shadow-lg rounded-lg p-6 mt-4">
+            <h2 class="font-semibold mb-4 text-center text-md sm:text-2xl text-[#FD5D14]">SAND TESTING EQUIPMENT </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="SandRammer.jpg" alt="Strohlein Apparatus" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">SAND RAMMER WITH BASE BLOCK </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="permeability.jpg" alt="Muffle" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">PERMEABILITY TESTER</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="rapid.jpg" alt="Digital Hot Air Oven" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> RAPID MOISTURE TESTER</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="UniversalTesting.jpg" alt="Chain O Matic Chemical Balance" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4">UNIVERSAL TESTING MACHINE TO CHECK GREEN COMPRESSIVE
+
+                            STRENGTH, SHEAR STRENGTH, TENSILE STRENGTH &
+                            
+                            TRANSEVERSE STRENGTH IN GREEN MOULDING SAND. </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="SieveShaker.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> SIEVE SHAKER WITH TIMER & SET OF SIEVES 
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Methylene_blue_clay_tester.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> METHYLENE BLUE CLAY TESTER 
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="Moudle.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> MOULD HARDNESS TESTER 
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative group">
+                    <img src="FortinBarometer.jpg" alt="Drop Testing Machine" class="w-full h-60 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <p class="text-white text-center px-4"> FORTIN’S BAROMETER 
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer bg-[#02245B] border-t-2 text-base-content p-10">
+        <aside>
+          <!-- <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-current">
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+          </svg> -->
+          <div class="w-[90px] bg-white"> 
+            <img src="logo2.png" alt="">
+
+          </div>
+          <p>
+            ACME Industries Ltd.
+            <br />
+            Providing reliable tech since 1992
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+    <script src="toogleMenu.js"></script>
+</body>
+</html>
